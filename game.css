@@ -1,0 +1,90 @@
+.choice-container {
+  display: flex;
+  margin-bottom: .5rem;
+  width: 100%;
+  border: 1px solid rgb(86, 165, 235, .25);
+  background-color: white;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-1px);
+  /* transition: transform 150ms; */
+}
+
+.choice-prefix {
+  padding: .5rem .8rem;
+  background-color: #56a5eb;
+  color: white;
+}
+
+.choice-text {
+  padding: .5rem;
+  width: 100%;
+}
+
+.correct {
+  background-color: #28a745;
+}
+
+.incorrect {
+  background-color: #dc3545;
+}
+
+/* HUD */
+
+.displays {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hud {
+  padding-bottom: 1rem; 
+}
+
+.hud h1{
+  margin: 0 auto;
+}
+
+.hud-prefix {
+  text-align: center;
+}
+
+.hud-main-text {
+  text-align: center;
+}
+
+#progressBar {
+  width: 9rem;
+  height: 1.5rem;
+  border: solid 1px #56a5eb;
+  margin-top: .5rem;
+}
+
+#progressBarFull {
+  height: 1.5rem;
+  background-color: #56a5eb;
+  width: 0%;
+}
+
+/* loader */
+
+/* from https://www.w3schools.com/howto/howto_css_loader.asp - with modifications */
+#loader {
+  border: 1.6rem solid white;
+  border-radius: 50%;
+  border-top: 1.6rem solid #56a5eb;
+  width: 12rem;
+  height: 12rem;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
